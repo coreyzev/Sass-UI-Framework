@@ -1,0 +1,141 @@
+// Clear after floats
+@mixin clearfix {
+    zoom: 1;
+    *zoom: 1;
+    // For IE 6/7 only Include this rule to trigger hasLayout and contain floats.
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Apply clearfix to this classes by default
+.clearfix, .group {
+    @include clearfix;
+}
+
+// Responsive mixins
+@mixin responsive($res) {
+    @media screen and (max-width: $res) {
+        @content;
+    }
+}
+
+@mixin mobilefirst($res) {
+    @media screen and (min-width: $res) {
+        @content;
+    }
+}
+
+
+
+// RANGES
+// We use these functions to define ranges for various things, like media queries.
+@function lower-bound($range) {
+    @if length($range) <= 0 {
+        @return 0;
+    }
+    @return nth($range, 1);
+}
+
+@function upper-bound($range) {
+    @if length($range) < 2 {
+        @return 999999999999;
+    }
+    @return nth($range, 2);
+}
+
+@mixin boxShadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $blur $color;
+        -moz-box-shadow: inset $top $left $blur $color;
+        box-shadow: inset $top $left $blur $color;
+    }
+    @else {
+        -webkit-box-shadow: $top $left $blur $color;
+        -moz-box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color;
+    }
+}
+@mixin noBoxShadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+@mixin textField {
+    display: inline-block;
+    outline: none;
+    height: $lineHeight;
+    line-height: $lineHeight;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    border:1px solid #ccc;
+    @include radius;
+    @include boxShadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+}
+
+@mixin button($color: $primaryColor, $textColor: #fff) {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    @include radius($btn-br);
+    @include boxShadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+    color: $textColor !important;
+    font-weight: bold;
+    border: solid 1px darken($color, 18%);
+    background: $color;
+    @include gradient(saturate($color, 15%), darken($color, 15%));
+    &:hover {
+        text-decoration: none;
+        background: saturate($color, 10%);
+        @include gradient(saturate($color, 5%), darken($color, 5%));
+    }
+    &:active {
+        position: relative;
+        top: 1px;
+        color: saturate($color, 15%);
+        @include gradient(saturate($color, 15%), lighten($color, 15%));
+    }
+}
+
+@mixin radius($radius: $br) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin gradient($from, $to) {
+    background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+    background: -moz-linear-gradient(top, $from, $to);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+}
+
+// Silent Classes
+
+%defaultFonts {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-style: normal;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+%boxSizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

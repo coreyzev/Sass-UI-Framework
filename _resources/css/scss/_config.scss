@@ -1,0 +1,46 @@
+// Consistent settings
+$br: 5px; // Border-radius
+$btn-br: 5px; // Button border-radius
+$padding: 40px; // Padding and margins
+
+
+// Breakpoints, from smallest to biggest 
+$breakpointMap: 
+//size-name //min-breakpoint    //columns	//gutter
+(small,     480px,              4,			30px),
+(medium,    750px,              8,			30px),
+(large,     960px,              12,			30px)
+;
+
+// Color variables
+$primaryColor: #1271db !default;
+$secondaryColor: #233E5B !default;
+$tertiaryColor: #aaa !default;
+
+$errorColor: #f00; // color for errors, validation etc.
+$successColor: #0f0; // color for success etc.
+$infoColor: #00f; // color for info etc.
+$warningColor: #FF8000; // color for warning message
+$subtleColor: #aaa; // Subtle color for subtle text
+
+$selectionColor: #00f;
+
+// Fonts
+$fontFamily: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
+$fixedWithFonts: Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$blockquoteFonts: Georgia, Times, "Times New Roman", serif !default;
+$headerFonts: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
+
+$fontWeight: 400 !default;
+$fontSize:100% !default;
+$lineHeight: 1.3em !default; // Consistent height for buttons, inputs etc.
+
+$headerMap:
+//f-name  //f-size  //f-weight
+(h1,      50px,     300),
+(h2,      42px,     300),
+(h3,      34px,     400),
+(h4,      25px,     400),
+(h5,      20px,     600),
+(h6,      16px,     600)
+;

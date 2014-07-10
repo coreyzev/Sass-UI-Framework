@@ -1,0 +1,49 @@
+// Text links
+a{
+	color:$primaryColor;
+	&:hover,&:focus{
+		text-decoration:none;
+	}
+}
+
+// Default button
+.btn{
+  @include button(
+    $color: $primaryColor, 
+    $textColor: #fff
+    );
+}
+
+// Secondary action button
+.btnSecondary{
+  @include button(
+    $color: $secondaryColor, 
+    $textColor: #fff
+    );
+}
+
+// Call to action - slightly bigger
+.btn-cta{
+  font-size:1.4em;
+  padding:0 50px;
+  height:$lineHeight*1.5;
+}
+
+// Link button - a button that looks like a link
+.btn-link{
+  @extend .btn;
+  color:$primaryColor;
+  background:transparent;
+  border:none;
+  text-shadow:none;
+  text-transform:none;
+  @include noBoxShadow;
+  &:hover,&:focus{
+  	text-decoration:underline;
+    background:transparent;
+  	@include noBoxShadow;
+  }
+  &:active{
+
+  }
+}

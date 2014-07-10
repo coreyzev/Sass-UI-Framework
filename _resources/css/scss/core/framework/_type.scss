@@ -1,0 +1,47 @@
+body {
+    @extend %defaultFonts;
+}
+
+blockquote {
+    font-style: italic;
+    font-weight: 400;
+    font-family: $blockquoteFonts;
+    padding-left: 25px;
+    font-size: 1.4em;
+    margin: 0 0 $padding / 2;
+    border-left: 2px solid $primaryColor;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $headerFonts;
+    font-style: normal;
+    margin: 0 0 .5em;
+    line-height: $lineHeight;
+}
+
+@each $f-name, $f-size, $f-weight in $headerMap {
+    #{$f-name} {
+        font: {
+            size: $f-size;
+            weight: $f-weight;
+        };
+    }
+}
+
+p {
+    margin: 0 0 $padding / 2;
+}
+
+pre {
+    font-family: $fixedWithFonts;
+    margin: 0 0 $padding / 2;
+    padding: 10px;
+    background: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    @include radius;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+}

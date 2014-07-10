@@ -1,0 +1,20 @@
+// Import config [variables only], and required files
+@import 
+"config",
+"core/required";
+
+// Third-party styles would potentially go here
+// @import "colorbox";
+// @import "videojs"; //though this would probably be part of our core already?
+
+// Start app specific css
+// html.appNamespace {
+
+//}
+
+// End app specific css
+
+@import 
+"core/ie",
+//"core/mq",
+"core/print";
