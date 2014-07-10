@@ -1,3 +1,7 @@
 @each $gName, $gMinBreak, $gCol, $gGutter in $breakpointMap {
+
+
     
 }
+
+@media only screen and (min-width: $gMinBreak) { @content; }
