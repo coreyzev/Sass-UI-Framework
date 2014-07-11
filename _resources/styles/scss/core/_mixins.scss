@@ -20,22 +20,32 @@
 }
 
 // Responsive mixins
-@mixin responsive($res) {
-    @media screen and (max-width: $res) {
-        @content;
+@mixin media($size, $modifier: up) {
+  @if not index(map-keys($breakpointMap), $size) {
+    @warn "Warning: `#{size}` is not a valid breakpoint name.";
+  }
+  @else {
+    @if $modifier == only { 
+      @if index(map-keys($breakpointMap), $size) == length($breakpointMap) { $modifier: up; }
+      @if index(map-keys($breakpointMap), $size) == 1 { $modifier: down; }
     }
-}
-
-@mixin mobilefirst($res) {
-    @media screen and (min-width: $res) {
-        @content;
+    $sizeUp: nth(map-get($breakpointMap, nth(nth($breakpointMap, index(map-keys($breakpointMap), $size) + 1), 1)), 1) - 1;
+    @if $modifier == up {
+      $minWidth: "(min-width: #{nth(map-get($breakpointMap, $size), 1)})";
+      $breakpoints: $minWidth !global;
     }
+    @if $modifier == down {
+      $maxWidth: "(max-width: #{$sizeUp})";
+      $breakpoints: $maxWidth !global;
+    }
+    @if $modifier == only {
+      $breakpoints: "(min-width: #{nth(map-get($breakpointMap, $size), 1)}) and (max-width: #{$sizeUp})" !global;
+    }
+    @media screen and #{$breakpoints} {
+      @content;
+    }
+  }
 }
-
-@mixin respond-to($breakpoint) {
-    @media only screen and (max-width: $breakpoint + px) { @content; }
-}
-
 
 // RANGES
 // We use these functions to define ranges for various things, like media queries.
