@@ -1,0 +1,34 @@
+@mixin media($size, $modifier: up) {
+  @if not index(map-keys($breakpointMap), $size) {
+    @warn "Warning: `#{size}` is not a valid breakpoint name.";
+  }
+  @else {
+    $first: false;
+    $last: false;
+    @if index(map-keys($breakpointMap), $size) == 1 { $first: true; }
+    @if index(map-keys($breakpointMap), $size) == length($breakpointMap) { $last: true; }
+    @if not($last) {
+      $sizeUp: nth(map-get($breakpointMap, nth(nth($breakpointMap, index(map-keys($breakpointMap), $size) + 1), 1)), 1) - 1 !global;
+    }
+    @if $modifier == only { 
+      @if $first { $modifier: down; }
+      @if $last { $modifier: up; }
+      @else {
+        $mediaBreaks: "and (min-width: #{nth(map-get($breakpointMap, $size), 1)}) and (max-width: #{$sizeUp})" !global;
+      }
+    }
+    @if $modifier == down {
+      @if $last { $mediaBreaks: ""; }
+      @else {
+        $mediaBreaks: "and (max-width: #{$sizeUp})" !global;
+      }
+    }
+    @if $modifier == up {
+      $mediaBreaks: "and (min-width: #{nth(map-get($breakpointMap, $size), 1)})" !global;
+    }
+    @media screen #{$mediaBreaks} {
+      @content;
+      content: new $size $modifier;
+    }
+  }
+}

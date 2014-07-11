@@ -7,9 +7,9 @@ $padding: 40px; // Padding and margins
 // Breakpoints, from smallest to biggest 
 $breakpointMap: (
 //size-name //min-breakpoint    //columns	//gutter
-small:      (480px,             4,			30px),
-medium:     (750px,             8,			30px),
-large:      (960px,             12,		  	30px)
+small:		(480px,				4,			30px),
+medium:		(750px,				8,			30px),
+large:		(960px,				12,			30px)
 );
 
 // Color variables
