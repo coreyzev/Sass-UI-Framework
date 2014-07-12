@@ -40,13 +40,16 @@
       }
     }
     @if $modifier == down {
-      @if $last { $mediaBreaks: ""; }
+      @if $last { $mediaBreaks: "" !global; }
       @else {
         $mediaBreaks: "and (max-width: #{$sizeUp})" !global;
       }
     }
     @if $modifier == up {
-      $mediaBreaks: "and (min-width: #{nth(map-get($breakpointMap, $size), 1)})" !global;
+      @if $first { $mediaBreaks: "" !global; }
+      @else {
+        $mediaBreaks: "and (min-width: #{nth(map-get($breakpointMap, $size), 1)})" !global;
+      }
     }
     @media screen #{$mediaBreaks} {
       @content;

@@ -1,93 +1,1814 @@
-/*
-Syntax error: Invalid CSS after "@each $f-name": expected "in", was ", $f-size, $f-w..."
-        on line 22 of /Users/coreyholland/Documents/TemplateV3/_resources/css/scss/core/framework/_type.scss
-        from line 11 of /Users/coreyholland/Documents/TemplateV3/_resources/css/scss/core/framework/_framework.scss
-        from line 3 of /Users/coreyholland/Documents/TemplateV3/_resources/css/scss/core/_required.scss
-        from line 4 of /Users/coreyholland/Documents/TemplateV3/_resources/css/scss/main.scss
+/* line 18, scss/core/_mixins.scss */
+.clearfix, .group {
+  zoom: 1;
+  *zoom: 1;
+}
+/* line 6, scss/core/_mixins.scss */
+.clearfix:before, .clearfix:after, .group:before, .group:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 12, scss/core/_mixins.scss */
+.clearfix:after, .group:after {
+  clear: both;
+}
 
-Backtrace:
-/Users/coreyholland/Documents/TemplateV3/_resources/css/scss/core/framework/_type.scss:22
-/Users/coreyholland/Documents/TemplateV3/_resources/css/scss/core/framework/_framework.scss:11
-/Users/coreyholland/Documents/TemplateV3/_resources/css/scss/core/_required.scss:3
-/Users/coreyholland/Documents/TemplateV3/_resources/css/scss/main.scss:4
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1080:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:248:in `each_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:174:in `special_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:146:in `directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:553:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:274:in `to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:87:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `call'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
-/usr/bin/compass:23:in `load'
-/usr/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"@each $f-name\": expected \"in\", was \", $f-size, $f-w...\"\A         on line 22 of /Users/coreyholland/Documents/TemplateV3/_resources/css/scss/core/framework/_type.scss\A         from line 11 of /Users/coreyholland/Documents/TemplateV3/_resources/css/scss/core/framework/_framework.scss\A         from line 3 of /Users/coreyholland/Documents/TemplateV3/_resources/css/scss/core/_required.scss\A         from line 4 of /Users/coreyholland/Documents/TemplateV3/_resources/css/scss/main.scss"; }
+/* line 152, scss/core/_mixins.scss */
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1.3em;
+}
+
+/* line 160, scss/core/_mixins.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 11, scss/core/framework/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, scss/core/framework/_reset.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, scss/core/framework/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 50, scss/core/framework/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, scss/core/framework/_reset.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 74, scss/core/framework/_reset.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, scss/core/framework/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, scss/core/framework/_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, scss/core/framework/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, scss/core/framework/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 125, scss/core/framework/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 134, scss/core/framework/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 142, scss/core/framework/_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, scss/core/framework/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 161, scss/core/framework/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 173, scss/core/framework/_reset.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 181, scss/core/framework/_reset.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 189, scss/core/framework/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 197, scss/core/framework/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 205, scss/core/framework/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 209, scss/core/framework/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, scss/core/framework/_reset.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 229, scss/core/framework/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 241, scss/core/framework/_reset.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 253, scss/core/framework/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 264, scss/core/framework/_reset.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 275, scss/core/framework/_reset.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 289, scss/core/framework/_reset.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 301, scss/core/framework/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 314, scss/core/framework/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 326, scss/core/framework/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 336, scss/core/framework/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 348, scss/core/framework/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 360, scss/core/framework/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 369, scss/core/framework/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 380, scss/core/framework/_reset.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 393, scss/core/framework/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 15, scss/core/framework/_boilerplate.scss */
+::-moz-selection, ::selection {
+  background: blue;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 24, scss/core/framework/_boilerplate.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 38, scss/core/framework/_boilerplate.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 49, scss/core/framework/_boilerplate.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 59, scss/core/framework/_boilerplate.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 63, scss/core/framework/_boilerplate.scss */
+ul, ol {
+  list-style: none outside none;
+  padding: 0;
+}
+
+/*
+ * Image replacement
+ */
+/* line 74, scss/core/framework/_boilerplate.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 82, scss/core/framework/_boilerplate.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 93, scss/core/framework/_boilerplate.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 102, scss/core/framework/_boilerplate.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 118, scss/core/framework/_boilerplate.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 132, scss/core/framework/_boilerplate.scss */
+.invisible {
+  visibility: hidden;
+}
+
+@media screen {
+  /* line 7, scss/core/framework/_grid.scss */
+  .container {
+    /* Grid Container */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    /* Grid Resets */
+  }
+  /* line 18, scss/core/framework/_grid.scss */
+  .container .row {
+    zoom: 1;
+  }
+  /* line 20, scss/core/framework/_grid.scss */
+  .container .row:before, .container .row:after {
+    content: "";
+    display: table;
+  }
+  /* line 24, scss/core/framework/_grid.scss */
+  .container .row:after {
+    clear: both;
+  }
+  /* line 28, scss/core/framework/_grid.scss */
+  .container .column {
+    display: inline;
+    float: left;
+    width: 100%;
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+  }
+  /* line 32, scss/core/framework/_grid.scss */
+  .container .column[class*="push"], .container .column[class*="pull"] {
+    position: relative;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.small-4 {
+    width: 100%;
+    margin-left: 2.08333%;
+    margin-right: 2.08333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.smallPre-4 {
+    padding-left: 100%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.smallSuffix-4 {
+    padding-right: 100%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.smallPush-4 {
+    left: 100%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.smallPull-4 {
+    right: 100%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.small-3 {
+    width: 73.95833%;
+    margin-left: 2.08333%;
+    margin-right: 2.08333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.smallPre-3 {
+    padding-left: 75%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.smallSuffix-3 {
+    padding-right: 75%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.smallPush-3 {
+    left: 75%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.smallPull-3 {
+    right: 75%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.small-2 {
+    width: 47.91667%;
+    margin-left: 2.08333%;
+    margin-right: 2.08333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.smallPre-2 {
+    padding-left: 50%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.smallSuffix-2 {
+    padding-right: 50%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.smallPush-2 {
+    left: 50%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.smallPull-2 {
+    right: 50%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.small-1 {
+    width: 21.875%;
+    margin-left: 2.08333%;
+    margin-right: 2.08333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.smallPre-1 {
+    padding-left: 25%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.smallSuffix-1 {
+    padding-right: 25%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.smallPush-1 {
+    left: 25%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.smallPull-1 {
+    right: 25%;
+  }
+  /* line 60, scss/core/framework/_grid.scss */
+  .container .column:first-child {
+    margin-left: 0;
+  }
+  /* line 64, scss/core/framework/_grid.scss */
+  .container .column:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 7, scss/core/framework/_grid.scss */
+  .container {
+    /* Grid Container */
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    max-width: 750px;
+    /* Grid Resets */
+  }
+  /* line 18, scss/core/framework/_grid.scss */
+  .container .row {
+    zoom: 1;
+  }
+  /* line 20, scss/core/framework/_grid.scss */
+  .container .row:before, .container .row:after {
+    content: "";
+    display: table;
+  }
+  /* line 24, scss/core/framework/_grid.scss */
+  .container .row:after {
+    clear: both;
+  }
+  /* line 28, scss/core/framework/_grid.scss */
+  .container .column {
+    display: inline;
+    float: left;
+    width: 100%;
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+  }
+  /* line 32, scss/core/framework/_grid.scss */
+  .container .column[class*="push"], .container .column[class*="pull"] {
+    position: relative;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.medium-8 {
+    width: 100%;
+    margin-left: 1.33333%;
+    margin-right: 1.33333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.mediumPre-8 {
+    padding-left: 100%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.mediumSuffix-8 {
+    padding-right: 100%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.mediumPush-8 {
+    left: 100%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.mediumPull-8 {
+    right: 100%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.medium-7 {
+    width: 87.16667%;
+    margin-left: 1.33333%;
+    margin-right: 1.33333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.mediumPre-7 {
+    padding-left: 87.5%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.mediumSuffix-7 {
+    padding-right: 87.5%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.mediumPush-7 {
+    left: 87.5%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.mediumPull-7 {
+    right: 87.5%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.medium-6 {
+    width: 74.33333%;
+    margin-left: 1.33333%;
+    margin-right: 1.33333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.mediumPre-6 {
+    padding-left: 75%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.mediumSuffix-6 {
+    padding-right: 75%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.mediumPush-6 {
+    left: 75%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.mediumPull-6 {
+    right: 75%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.medium-5 {
+    width: 61.5%;
+    margin-left: 1.33333%;
+    margin-right: 1.33333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.mediumPre-5 {
+    padding-left: 62.5%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.mediumSuffix-5 {
+    padding-right: 62.5%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.mediumPush-5 {
+    left: 62.5%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.mediumPull-5 {
+    right: 62.5%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.medium-4 {
+    width: 48.66667%;
+    margin-left: 1.33333%;
+    margin-right: 1.33333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.mediumPre-4 {
+    padding-left: 50%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.mediumSuffix-4 {
+    padding-right: 50%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.mediumPush-4 {
+    left: 50%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.mediumPull-4 {
+    right: 50%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.medium-3 {
+    width: 35.83333%;
+    margin-left: 1.33333%;
+    margin-right: 1.33333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.mediumPre-3 {
+    padding-left: 37.5%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.mediumSuffix-3 {
+    padding-right: 37.5%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.mediumPush-3 {
+    left: 37.5%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.mediumPull-3 {
+    right: 37.5%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.medium-2 {
+    width: 23%;
+    margin-left: 1.33333%;
+    margin-right: 1.33333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.mediumPre-2 {
+    padding-left: 25%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.mediumSuffix-2 {
+    padding-right: 25%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.mediumPush-2 {
+    left: 25%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.mediumPull-2 {
+    right: 25%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.medium-1 {
+    width: 10.16667%;
+    margin-left: 1.33333%;
+    margin-right: 1.33333%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.mediumPre-1 {
+    padding-left: 12.5%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.mediumSuffix-1 {
+    padding-right: 12.5%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.mediumPush-1 {
+    left: 12.5%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.mediumPull-1 {
+    right: 12.5%;
+  }
+  /* line 60, scss/core/framework/_grid.scss */
+  .container .column:first-child {
+    margin-left: 0;
+  }
+  /* line 64, scss/core/framework/_grid.scss */
+  .container .column:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 7, scss/core/framework/_grid.scss */
+  .container {
+    /* Grid Container */
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    max-width: 960px;
+    /* Grid Resets */
+  }
+  /* line 18, scss/core/framework/_grid.scss */
+  .container .row {
+    zoom: 1;
+  }
+  /* line 20, scss/core/framework/_grid.scss */
+  .container .row:before, .container .row:after {
+    content: "";
+    display: table;
+  }
+  /* line 24, scss/core/framework/_grid.scss */
+  .container .row:after {
+    clear: both;
+  }
+  /* line 28, scss/core/framework/_grid.scss */
+  .container .column {
+    display: inline;
+    float: left;
+    width: 100%;
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+    /* Grid System Classes */
+  }
+  /* line 32, scss/core/framework/_grid.scss */
+  .container .column[class*="push"], .container .column[class*="pull"] {
+    position: relative;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-12 {
+    width: 100%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-12 {
+    padding-left: 100%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-12 {
+    padding-right: 100%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-12 {
+    left: 100%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-12 {
+    right: 100%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-11 {
+    width: 91.49306%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-11 {
+    padding-left: 91.66667%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-11 {
+    padding-right: 91.66667%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-11 {
+    left: 91.66667%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-11 {
+    right: 91.66667%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-10 {
+    width: 82.98611%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-10 {
+    padding-left: 83.33333%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-10 {
+    padding-right: 83.33333%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-10 {
+    left: 83.33333%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-10 {
+    right: 83.33333%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-9 {
+    width: 74.47917%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-9 {
+    padding-left: 75%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-9 {
+    padding-right: 75%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-9 {
+    left: 75%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-9 {
+    right: 75%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-8 {
+    width: 65.97222%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-8 {
+    padding-left: 66.66667%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-8 {
+    padding-right: 66.66667%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-8 {
+    left: 66.66667%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-8 {
+    right: 66.66667%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-7 {
+    width: 57.46528%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-7 {
+    padding-left: 58.33333%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-7 {
+    padding-right: 58.33333%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-7 {
+    left: 58.33333%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-7 {
+    right: 58.33333%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-6 {
+    width: 48.95833%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-6 {
+    padding-left: 50%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-6 {
+    padding-right: 50%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-6 {
+    left: 50%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-6 {
+    right: 50%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-5 {
+    width: 40.45139%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-5 {
+    padding-left: 41.66667%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-5 {
+    padding-right: 41.66667%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-5 {
+    left: 41.66667%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-5 {
+    right: 41.66667%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-4 {
+    width: 31.94444%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-4 {
+    padding-left: 33.33333%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-4 {
+    padding-right: 33.33333%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-4 {
+    left: 33.33333%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-4 {
+    right: 33.33333%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-3 {
+    width: 23.4375%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-3 {
+    padding-left: 25%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-3 {
+    padding-right: 25%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-3 {
+    left: 25%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-3 {
+    right: 25%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-2 {
+    width: 14.93056%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-2 {
+    padding-left: 16.66667%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-2 {
+    padding-right: 16.66667%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-2 {
+    left: 16.66667%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-2 {
+    right: 16.66667%;
+  }
+  /* line 38, scss/core/framework/_grid.scss */
+  .container .column.large-1 {
+    width: 6.42361%;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+  }
+  /* line 45, scss/core/framework/_grid.scss */
+  .container .column.largePre-1 {
+    padding-left: 8.33333%;
+  }
+  /* line 48, scss/core/framework/_grid.scss */
+  .container .column.largeSuffix-1 {
+    padding-right: 8.33333%;
+  }
+  /* line 51, scss/core/framework/_grid.scss */
+  .container .column.largePush-1 {
+    left: 8.33333%;
+  }
+  /* line 54, scss/core/framework/_grid.scss */
+  .container .column.largePull-1 {
+    right: 8.33333%;
+  }
+  /* line 60, scss/core/framework/_grid.scss */
+  .container .column:first-child {
+    margin-left: 0;
+  }
+  /* line 64, scss/core/framework/_grid.scss */
+  .container .column:last-child {
+    margin-right: 0;
+  }
+}
+/* line 5, scss/core/framework/_type.scss */
+blockquote {
+  font-style: italic;
+  font-weight: 400;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  padding-left: 25px;
+  font-size: 1.4em;
+  margin: 0 0 20px;
+  border-left: 2px solid #1271db;
+}
+
+/* line 15, scss/core/framework/_type.scss */
+h1, h2, h3, h4, h5 {
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  margin: 0 0 .5em;
+  line-height: 1.3em;
+}
+
+/* line 23, scss/core/framework/_type.scss */
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+/* line 23, scss/core/framework/_type.scss */
+h2 {
+  font-size: 42px;
+  font-weight: 300;
+}
+
+/* line 23, scss/core/framework/_type.scss */
+h3 {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+/* line 23, scss/core/framework/_type.scss */
+h4 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/* line 23, scss/core/framework/_type.scss */
+h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* line 23, scss/core/framework/_type.scss */
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 31, scss/core/framework/_type.scss */
+p {
+  margin: 0 0 20px;
+}
+
+/* line 35, scss/core/framework/_type.scss */
+pre {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  margin: 0 0 20px;
+  padding: 10px;
+  background: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+/* line 1, scss/core/framework/_media.scss */
+img, video, audio, iframe, object {
+  max-width: 100%;
+}
+
+/* line 2, scss/core/framework/_links.scss */
+a {
+  color: #1271db;
+}
+/* line 4, scss/core/framework/_links.scss */
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* line 10, scss/core/framework/_links.scss */
+.btn, .btn-link {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: white !important;
+  font-weight: bold;
+  border: solid 1px #0b4586;
+  background: #1271db;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0070ed), to(#0c4d94));
+  background: -moz-linear-gradient(top, #0070ed, #0c4d94);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0070ed', endColorstr='#0c4d94');
+}
+/* line 125, scss/core/_mixins.scss */
+.btn:hover, .btn-link:hover {
+  text-decoration: none;
+  background: #0670e7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0c71e1), to(#1065c3));
+  background: -moz-linear-gradient(top, #0c71e1, #1065c3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0c71e1', endColorstr='#1065c3');
+}
+/* line 130, scss/core/_mixins.scss */
+.btn:active, .btn-link:active {
+  position: relative;
+  top: 1px;
+  color: #0070ed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0070ed), to(#4998f0));
+  background: -moz-linear-gradient(top, #0070ed, #4998f0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0070ed', endColorstr='#4998f0');
+}
+
+/* line 18, scss/core/framework/_links.scss */
+.btnSecondary {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: white !important;
+  font-weight: bold;
+  border: solid 1px #0a1119;
+  background: #233e5b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a3e64), to(#0e1824));
+  background: -moz-linear-gradient(top, #1a3e64, #0e1824);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a3e64', endColorstr='#0e1824');
+}
+/* line 125, scss/core/_mixins.scss */
+.btnSecondary:hover {
+  text-decoration: none;
+  background: #1d3e61;
+  background: -webkit-gradient(linear, left top, left bottom, from(#203e5e), to(#1c3149));
+  background: -moz-linear-gradient(top, #203e5e, #1c3149);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#203e5e', endColorstr='#1c3149');
+}
+/* line 130, scss/core/_mixins.scss */
+.btnSecondary:active {
+  position: relative;
+  top: 1px;
+  color: #1a3e64;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a3e64), to(#386492));
+  background: -moz-linear-gradient(top, #1a3e64, #386492);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a3e64', endColorstr='#386492');
+}
+
+/* line 26, scss/core/framework/_links.scss */
+.btn-cta {
+  font-size: 1.4em;
+  padding: 0 50px;
+  height: 1.95em;
+}
+
+/* line 33, scss/core/framework/_links.scss */
+.btn-link {
+  color: #1271db;
+  background: transparent;
+  border: none;
+  text-shadow: none;
+  text-transform: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 41, scss/core/framework/_links.scss */
+.btn-link:hover, .btn-link:focus {
+  text-decoration: underline;
+  background: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 1, scss/core/framework/_tables.scss */
+table {
+  width: 100%;
+}
+/* line 3, scss/core/framework/_tables.scss */
+table th, table td {
+  text-align: left;
+  padding: 5px;
+}
+/* line 7, scss/core/framework/_tables.scss */
+table th {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 1, scss/core/framework/_forms.scss */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* line 5, scss/core/framework/_forms.scss */
+input[type=text], input[type=email], input[type=phone], input[type=password], input[type=number], input[type=search], textarea {
+  display: inline-block;
+  outline: none;
+  height: 1.3em;
+  line-height: 1.3em;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+/* line 7, scss/core/framework/_forms.scss */
+input[type=text]:focus, input[type=email]:focus, input[type=phone]:focus, input[type=password]:focus, input[type=number]:focus, input[type=search]:focus, textarea:focus {
+  border-color: #1271db;
+}
+/* line 10, scss/core/framework/_forms.scss */
+input[type=text].full-width, input[type=email].full-width, input[type=phone].full-width, input[type=password].full-width, input[type=number].full-width, input[type=search].full-width, textarea.full-width {
+  width: 100%;
+}
+/* line 13, scss/core/framework/_forms.scss */
+input[type=text].error, input[type=email].error, input[type=phone].error, input[type=password].error, input[type=number].error, input[type=search].error, textarea.error {
+  border-color: red;
+}
+
+/* line 17, scss/core/framework/_forms.scss */
+textarea {
+  height: 3.9em;
+}
+
+/* line 21, scss/core/framework/_forms.scss */
+form {
+  margin-bottom: 40px;
+}
+/* line 25, scss/core/framework/_forms.scss */
+form .field {
+  margin-bottom: 20px;
+}
+/* line 30, scss/core/framework/_forms.scss */
+form .note {
+  margin-top: 5px;
+  color: #aaaaaa;
+}
+/* line 36, scss/core/framework/_forms.scss */
+form .req {
+  font-style: italic;
+}
+/* line 44, scss/core/framework/_forms.scss */
+form .error .reason {
+  margin-top: 5px;
+  color: red;
+}
+
+/* line 2, scss/core/framework/_notifications.scss */
+.notification {
+  border: 1px solid;
+  padding: 10px;
+  margin-bottom: 40px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  zoom: 1;
+  *zoom: 1;
+}
+/* line 6, scss/core/_mixins.scss */
+.notification:before, .notification:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 12, scss/core/_mixins.scss */
+.notification:after {
+  clear: both;
+}
+/* line 8, scss/core/framework/_notifications.scss */
+.notification.error {
+  border-color: red;
+  color: #b30000;
+  background: #ffb3b3;
+}
+/* line 13, scss/core/framework/_notifications.scss */
+.notification.success {
+  border-color: lime;
+  color: #00cc00;
+  background: #e5ffe5;
+}
+/* line 18, scss/core/framework/_notifications.scss */
+.notification.warning {
+  border-color: #ff8000;
+  color: #cc6600;
+  background: #ffe6cc;
+}
+/* line 23, scss/core/framework/_notifications.scss */
+.notification.info {
+  border-color: blue;
+  color: #0000cc;
+  background: #f5f5ff;
+}
+/* line 28, scss/core/framework/_notifications.scss */
+.notification.empty {
+  text-align: center;
+  background: #f4f4f4;
+  border: 1px dashed #999;
+}
+/* line 33, scss/core/framework/_notifications.scss */
+.notification p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 5, scss/core/framework/_helpers.scss */
+.aligncenter {
+  text-align: center;
+}
+
+/* line 9, scss/core/framework/_helpers.scss */
+.alignright {
+  text-align: right;
+}
+
+/* line 13, scss/core/framework/_helpers.scss */
+.clear {
+  clear: both;
+}
+
+/* line 17, scss/core/framework/_helpers.scss */
+.right {
+  float: right;
+}
+
+/* line 21, scss/core/framework/_helpers.scss */
+.left {
+  float: left;
+}
+
+/* line 25, scss/core/framework/_helpers.scss */
+.nolist {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* line 31, scss/core/framework/_helpers.scss */
+.valign {
+  vertical-align: middle;
+}
+
+/* line 35, scss/core/framework/_helpers.scss */
+hr {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 40px 0;
+}
+
+/* line 41, scss/core/framework/_helpers.scss */
+.subtle {
+  color: #aaaaaa;
+}
+
+/* line 45, scss/core/framework/_helpers.scss */
+.relative {
+  position: relative;
+}
+
+/* line 5, scss/core/_core.scss */
+textarea {
+  resize: none;
+}
+
+/* line 2, scss/core/_global.scss */
+.inner-wrapper {
+  background-color: #fff;
+}
+
+/* line 7, scss/core/_global.scss */
+.header-container {
+  height: 137px;
+}
+
+/* line 12, scss/core/_global.scss */
+.error {
+  color: red;
+}
+
+/* line 16, scss/core/_global.scss */
+.warning {
+  color: #ff8000;
+}
+
+/* line 4, scss/core/_ie.scss */
+.lt-ie9 .span1, .lt-ie9 .span2, .lt-ie9 .span3, .lt-ie9 .span4, .lt-ie9 .span5, .lt-ie9 .span6, .lt-ie9 .span7, .lt-ie9 .span8, .lt-ie9 .span9, .lt-ie9 .span10, .lt-ie9 .span11, .lt-ie9 .span12 {
+  display: block;
+  margin-bottom: 20px;
+  float: left;
+  margin: 0 1.06385%;
+  padding: 1.06385%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 14, scss/core/_ie.scss */
+.lt-ie9 .span1 {
+  width: 6.20563%;
+}
+/* line 17, scss/core/_ie.scss */
+.lt-ie9 .span2 {
+  width: 14.539%;
+}
+/* line 20, scss/core/_ie.scss */
+.lt-ie9 .span3 {
+  width: 22.8723%;
+}
+/* line 23, scss/core/_ie.scss */
+.lt-ie9 .span4 {
+  width: 31.2056%;
+}
+/* line 26, scss/core/_ie.scss */
+.lt-ie9 .span5 {
+  width: 39.539%;
+}
+/* line 29, scss/core/_ie.scss */
+.lt-ie9 .span6 {
+  width: 47.8723%;
+}
+/* line 32, scss/core/_ie.scss */
+.lt-ie9 .span7 {
+  width: 56.2056%;
+}
+/* line 35, scss/core/_ie.scss */
+.lt-ie9 .span8 {
+  width: 64.539%;
+}
+/* line 38, scss/core/_ie.scss */
+.lt-ie9 .span9 {
+  width: 72.8723%;
+}
+/* line 41, scss/core/_ie.scss */
+.lt-ie9 .span10 {
+  width: 81.2056%;
+}
+/* line 44, scss/core/_ie.scss */
+.lt-ie9 .span11 {
+  width: 89.539%;
+}
+/* line 47, scss/core/_ie.scss */
+.lt-ie9 .span12 {
+  width: 97.8723%;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 7, scss/core/_print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 14, scss/core/_print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 19, scss/core/_print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 23, scss/core/_print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 31, scss/core/_print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 37, scss/core/_print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 43, scss/core/_print.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 47, scss/core/_print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 52, scss/core/_print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 60, scss/core/_print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 67, scss/core/_print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 74, scss/core/_print.scss */
+.showForPrint {
+  display: none !important;
+}

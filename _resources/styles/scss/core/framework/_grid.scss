@@ -1,0 +1,81 @@
+@function toPercent($valueIn, $gMinBreak) {
+    @return ($valueIn / $gMinBreak) * 100%;
+}
+
+@mixin gridFunction($gName, $gMinBreak, $gCol, $gGut) {
+    //body { max-width: $gMinBreak;}
+    .container {
+        /* Grid Container */
+        margin-left: auto;
+        margin-right: auto;
+        @if (index(map-keys($breakpointMap), $gName) == 1) {
+            max-width: $gMinBreak;
+        }
+        @else {
+            width: $gMinBreak;
+            max-width: $gMinBreak
+        }
+        .row {
+            zoom: 1;
+            &:before, &:after {
+                content: "";
+                display: table;
+            }
+            &:after {
+                clear: both;
+            }
+        }
+        .column {
+            display: inline;
+            float: left;
+            width: 100%;
+            &[class*="push"], &[class*="pull"] {
+                position: relative;
+            }
+            @for $i from $gCol to 0 {
+                $width: toPercent($gMinBreak / $gCol * $i, $gMinBreak);
+                /* Grid System Classes */
+                &.#{$gName}-#{$i} {
+                    //$colWidth: ($gMinBreak / $gCol) * $i ;//- ( ( $gCol - 1) / ($i - 1)) * ($gCol);
+                    $colWidth: $gMinBreak - (( $gMinBreak / $gCol ) * ( $gCol - $i) + ($gGut / $gCol) * ($gCol - $i));
+                    width: toPercent($colWidth, $gMinBreak);
+                    margin-left: ($gGut / 2) / $gMinBreak * 100%;
+                    margin-right: ($gGut / 2) / $gMinBreak * 100%;
+                }
+                &.#{$gName}Pre-#{$i} {
+                    padding-left: $width;
+                }
+                &.#{$gName}Suffix-#{$i} {
+                    padding-right: $width;
+                }
+                &.#{$gName}Push-#{$i} {
+                    left: $width;
+                }
+                &.#{$gName}Pull-#{$i} {
+                    right: $width;
+                }
+            }
+        }
+        /* Grid Resets */
+        .column:first-child {
+            margin-left: 0;
+        }
+        // no left margin
+        .column:last-child {
+            margin-right: 0;
+        }
+        // no right margin
+
+    }
+}
+
+@each $gName, $gValues in $breakpointMap {
+    $gMinBreak: nth($gValues, 1);
+    $gCol: nth($gValues, 2);
+    $gGut: nth($gValues, 3);
+
+    @include media(#{$gName}) {
+        @include gridFunction($gName, $gMinBreak, $gCol, $gGut);
+    }
+
+}
