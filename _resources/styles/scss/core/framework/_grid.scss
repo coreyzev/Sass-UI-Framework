@@ -1,5 +1,5 @@
 @function toPercent($valueIn, $gMinBreak) {
-    @return ($valueIn / $gMinBreak) * 100%;
+    @return floor(($valueIn / $gMinBreak) * 1000%)/10;
 }
 
 @mixin gridFunction($gName, $gMinBreak, $gCol, $gGut) {
@@ -39,8 +39,8 @@
                     //$colWidth: ($gMinBreak / $gCol) * $i ;//- ( ( $gCol - 1) / ($i - 1)) * ($gCol);
                     $colWidth: $gMinBreak - (( $gMinBreak / $gCol ) * ( $gCol - $i) + ($gGut / $gCol) * ($gCol - $i));
                     width: toPercent($colWidth, $gMinBreak);
-                    margin-left: ($gGut / 2) / $gMinBreak * 100%;
-                    margin-right: ($gGut / 2) / $gMinBreak * 100%;
+                    margin-left: ceil(($gGut / 2) / $gMinBreak * 1000%)/10;
+                    margin-right: ceil(($gGut / 2) / $gMinBreak * 1000%)/10;
                 }
                 &.#{$gName}Pre-#{$i} {
                     padding-left: $width;
