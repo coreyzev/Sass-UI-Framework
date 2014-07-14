@@ -15,7 +15,7 @@
   clear: both;
 }
 
-/* line 152, scss/core/_mixins.scss */
+/* line 166, scss/core/_mixins.scss */
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
@@ -24,7 +24,7 @@ body {
   line-height: 1.3em;
 }
 
-/* line 160, scss/core/_mixins.scss */
+/* line 174, scss/core/_mixins.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -609,8 +609,8 @@ ul, ol {
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.small-4 {
     width: 100%;
-    margin-left: 2.1%;
-    margin-right: 2.1%;
+    margin-left: 1.6%;
+    margin-right: 1.6%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.smallPre-4 {
@@ -630,9 +630,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.small-3 {
-    width: 73.9%;
-    margin-left: 2.1%;
-    margin-right: 2.1%;
+    width: 74.2%;
+    margin-left: 1.6%;
+    margin-right: 1.6%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.smallPre-3 {
@@ -652,9 +652,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.small-2 {
-    width: 47.9%;
-    margin-left: 2.1%;
-    margin-right: 2.1%;
+    width: 48.4%;
+    margin-left: 1.6%;
+    margin-right: 1.6%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.smallPre-2 {
@@ -674,9 +674,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.small-1 {
-    width: 21.8%;
-    margin-left: 2.1%;
-    margin-right: 2.1%;
+    width: 22.6%;
+    margin-left: 1.6%;
+    margin-right: 1.6%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.smallPre-1 {
@@ -747,8 +747,8 @@ ul, ol {
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.medium-8 {
     width: 100%;
-    margin-left: 1.4%;
-    margin-right: 1.4%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.mediumPre-8 {
@@ -768,9 +768,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.medium-7 {
-    width: 87.1%;
-    margin-left: 1.4%;
-    margin-right: 1.4%;
+    width: 87.2%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.mediumPre-7 {
@@ -790,9 +790,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.medium-6 {
-    width: 74.3%;
-    margin-left: 1.4%;
-    margin-right: 1.4%;
+    width: 74.5%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.mediumPre-6 {
@@ -812,9 +812,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.medium-5 {
-    width: 61.5%;
-    margin-left: 1.4%;
-    margin-right: 1.4%;
+    width: 61.7%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.mediumPre-5 {
@@ -834,9 +834,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.medium-4 {
-    width: 48.6%;
-    margin-left: 1.4%;
-    margin-right: 1.4%;
+    width: 49%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.mediumPre-4 {
@@ -856,9 +856,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.medium-3 {
-    width: 35.8%;
-    margin-left: 1.4%;
-    margin-right: 1.4%;
+    width: 36.2%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.mediumPre-3 {
@@ -878,9 +878,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.medium-2 {
-    width: 23%;
-    margin-left: 1.4%;
-    margin-right: 1.4%;
+    width: 23.5%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.mediumPre-2 {
@@ -900,9 +900,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.medium-1 {
-    width: 10.1%;
-    margin-left: 1.4%;
-    margin-right: 1.4%;
+    width: 10.7%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.mediumPre-1 {
@@ -977,8 +977,8 @@ ul, ol {
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-12 {
     width: 100%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-12 {
@@ -998,9 +998,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-11 {
-    width: 91.4%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    width: 91.5%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-11 {
@@ -1020,9 +1020,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-10 {
-    width: 82.9%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    width: 83%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-10 {
@@ -1042,9 +1042,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-9 {
-    width: 74.4%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    width: 74.6%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-9 {
@@ -1064,9 +1064,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-8 {
-    width: 65.9%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    width: 66.1%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-8 {
@@ -1086,9 +1086,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-7 {
-    width: 57.4%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    width: 57.6%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-7 {
@@ -1108,9 +1108,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-6 {
-    width: 48.9%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    width: 49.2%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-6 {
@@ -1130,9 +1130,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-5 {
-    width: 40.4%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    width: 40.7%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-5 {
@@ -1152,9 +1152,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-4 {
-    width: 31.9%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    width: 32.2%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-4 {
@@ -1174,9 +1174,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-3 {
-    width: 23.4%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    width: 23.8%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-3 {
@@ -1196,9 +1196,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-2 {
-    width: 14.9%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    width: 15.3%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-2 {
@@ -1218,9 +1218,9 @@ ul, ol {
   }
   /* line 38, scss/core/framework/_grid.scss */
   .container .column.large-1 {
-    width: 6.4%;
-    margin-left: 1.1%;
-    margin-right: 1.1%;
+    width: 6.9%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
   }
   /* line 45, scss/core/framework/_grid.scss */
   .container .column.largePre-1 {
@@ -1363,7 +1363,7 @@ a:hover, a:focus {
   background: -moz-linear-gradient(top, #0070ed, #0c4d94);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0070ed', endColorstr='#0c4d94');
 }
-/* line 125, scss/core/_mixins.scss */
+/* line 132, scss/core/_mixins.scss */
 .btn:hover, .btn-link:hover {
   text-decoration: none;
   background: #0670e7;
@@ -1371,7 +1371,7 @@ a:hover, a:focus {
   background: -moz-linear-gradient(top, #0c71e1, #1065c3);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0c71e1', endColorstr='#1065c3');
 }
-/* line 130, scss/core/_mixins.scss */
+/* line 137, scss/core/_mixins.scss */
 .btn:active, .btn-link:active {
   position: relative;
   top: 1px;
@@ -1406,7 +1406,7 @@ a:hover, a:focus {
   background: -moz-linear-gradient(top, #1a3e64, #0e1824);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a3e64', endColorstr='#0e1824');
 }
-/* line 125, scss/core/_mixins.scss */
+/* line 132, scss/core/_mixins.scss */
 .btnSecondary:hover {
   text-decoration: none;
   background: #1d3e61;
@@ -1414,7 +1414,7 @@ a:hover, a:focus {
   background: -moz-linear-gradient(top, #203e5e, #1c3149);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#203e5e', endColorstr='#1c3149');
 }
-/* line 130, scss/core/_mixins.scss */
+/* line 137, scss/core/_mixins.scss */
 .btnSecondary:active {
   position: relative;
   top: 1px;

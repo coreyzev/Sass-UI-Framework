@@ -2,14 +2,16 @@
 $br: 5px; // Border-radius
 $btn-br: 5px; // Button border-radius
 $padding: 40px; // Padding and margins
+$fixMqs: false !default;
+$oldIe: false !default; // For the whole project. Make true in ie.scss for specific stylesheet
 
 
 // Breakpoints, from smallest to biggest 
 $breakpointMap: (
 //size-name //min-breakpoint    //columns	//gutter
-small:		(480px,				4,			20px),
-medium:		(750px,				8,			20px),
-large:		(960px,				12,			20px)
+small:		(480px,				4,			15px),
+medium:		(750px,				8,			15px),
+large:		(960px,				12,			15px)
 );
 
 // Color variables
